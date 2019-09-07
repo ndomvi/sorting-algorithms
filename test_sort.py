@@ -4,7 +4,8 @@ from generator import generate_array
 from bubble import bubble_sort
 from selection import selection_sort
 
-@fixture(scope='session')
+
+@fixture(scope='function')
 def array():
     return generate_array()
 

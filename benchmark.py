@@ -1,9 +1,6 @@
 from timeit import timeit
 from generator import generate_array
 
-from bubble import bubble_sort
-from selection import selection_sort
-
 
 def benchmark(n=[1, 10, 100, 1000]):
     """Prints times taken by different sorting algorithms.\n
@@ -26,9 +23,11 @@ def benchmark(n=[1, 10, 100, 1000]):
             f"selection_sort({array})", setup="from selection import selection_sort", number=10)
 
         print(f'{length}', end='')
+
         print(f' \t{time_sort:.5f}', end='')
         print(f' \t{time_bubble:.5f}', end='')
         print(f' \t{time_selection:.5f}', end='')
+
         print()
 
 
