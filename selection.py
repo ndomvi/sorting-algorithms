@@ -22,7 +22,7 @@ def selection_sort_pythonic(arr):
     return arr
 
 
-def selection_sort_oneliner(arr):
+def selection_sort_oneline(arr):
     """Selection sort implemented in one line.
         Speed is the same as selection_sort_pythonic().
     """
