@@ -3,6 +3,7 @@ from generator import generate_array
 
 from bubble import bubble_sort
 from selection import selection_sort
+from insertion import insertion_sort
 
 
 @fixture(scope='function')
@@ -18,3 +19,8 @@ def test_bubble_sort(array):
 def test_selection_sort(array):
     """Compares array sorted with selection sort with python built-in sort"""
     assert sorted(array) == selection_sort(array)
+
+
+def test_insertion_sort(array):
+    """Compares array sorted with insertion sort with python built-in sort"""
+    assert sorted(array) == insertion_sort(array)

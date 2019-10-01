@@ -12,7 +12,7 @@ def selection_sort(arr):
 
 def selection_sort_pythonic(arr):
     """Speeded up version of the sort by using more built-in features of Python.
-        Benchmarks show about 4x the speed of 'normal' sort
+        Benchmarks show about 4x the speed of 'normal' sort.
     """
     for i, _ in enumerate(arr):
         # TODO find out why is it necessary to store min index in a variable
@@ -24,6 +24,6 @@ def selection_sort_pythonic(arr):
 
 def selection_sort_oneliner(arr):
     """Selection sort implemented in one line.
-        Speed is the same as selection_sort_pythonic
+        Speed is the same as selection_sort_pythonic().
     """
     return [arr.pop(arr.index(min(arr))) for _ in range(len(arr))]
