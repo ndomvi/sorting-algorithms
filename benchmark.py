@@ -8,7 +8,8 @@ def benchmark(n=[1, 10, 100, 1000]):
     """
 
     # TODO find out WHY do we need 2 spaces before '\tSelection'
-    print('n\tBuilt-in\tBubble  \tSelection\tInsertion\tMerge')
+    # TODO okay, '\tQuick' needs THREE spaces to be correctly aligned.
+    print('n\tBuilt-in\tBubble  \tSelection\tInsertion\tMerge   \tQuick')
 
     for length in n:
         # reuse the same array to make testing fair
@@ -29,6 +30,9 @@ def benchmark(n=[1, 10, 100, 1000]):
         time_merge = timeit(
             f"merge_sort({array})", setup="from merge import merge_sort", number=10)
 
+        time_quick = timeit(
+            f"quick_sort({array})", setup="from quick import quick_sort", number=10)
+
         print(f'{length}', end='')
 
         # :.5f makes it show digits after a comma
@@ -37,6 +41,7 @@ def benchmark(n=[1, 10, 100, 1000]):
         print(f' \t{time_selection:.5f}', end='')
         print(f' \t{time_insertion:.5f}', end='')
         print(f' \t{time_merge:.5f}', end='')
+        print(f' \t{time_quick:.5f}', end='')
 
         print()
 
