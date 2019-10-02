@@ -26,7 +26,7 @@ def merge(a, b):
 def merge_sort(arr):
     """Sorts an array by using merge sort algorithm.
     It splits the array in two and performs recursive sort on each of them.
-    Then, it merges two sorted arrays back with merge() .
+    Then, it merges two sorted arrays back with merge().
     """
     # if a list contains 1 or 0 elements it doesn't need sorting
     if len(arr) < 2:

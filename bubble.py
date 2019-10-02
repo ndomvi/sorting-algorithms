@@ -1,5 +1,8 @@
 def bubble_sort(arr):
-    """Sorts an array using bubble sort algorithm"""
+    """Sorts an array using bubble sort algorithm.
+    It compares two adjacent variables and swaps them if needed.
+    Exits when no swaps were done(and thus the array is sorted).
+    """
     sorted = False
     while not sorted:
         sorted = True

@@ -1,5 +1,8 @@
 def selection_sort(arr):
-    """Sorts an array using selection sort algorithm"""
+    """Sorts an array using selection sort algorithm.
+    It is similar to Bubble sort, but finds smallest element and swaps it with
+    current first unsorted element.
+    """
     for last_sorted, _ in enumerate(arr):
         min_index = None  # index of the smallest element in the array
         for i, num in enumerate(arr[last_sorted:]):
