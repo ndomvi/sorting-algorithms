@@ -1,4 +1,7 @@
-def bubble_sort(arr):
+from typing import List
+
+
+def bubble_sort(arr: List[int]) -> List[int]:
     """Sorts an array using bubble sort algorithm.
     It compares two adjacent variables and swaps them if needed.
     Exits when no swaps were done(and thus the array is sorted).

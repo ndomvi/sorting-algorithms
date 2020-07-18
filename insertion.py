@@ -1,4 +1,7 @@
-def insertion_sort(arr):
+from typing import List
+
+
+def insertion_sort(arr: List[int]) -> List[int]:
     """Sorts an array using insertion sort algorithm.
     It moves an element through sorted part of the array until it finds it's
     place.

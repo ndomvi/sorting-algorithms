@@ -1,4 +1,7 @@
-def merge(a, b):
+from typing import List
+
+
+def merge(a: List[int], b: List[int]) -> List[int]:
     """Merges sorted arrays a and b by placing smallest element
     from each array into a temporary array and returning it"""
     result = []
@@ -23,7 +26,7 @@ def merge(a, b):
     return result
 
 
-def merge_sort(arr):
+def merge_sort(arr: List[int]) -> List[int]:
     """Sorts an array by using merge sort algorithm.
     It splits the array in two and performs recursive sort on each of them.
     Then, it merges two sorted arrays back with merge().
