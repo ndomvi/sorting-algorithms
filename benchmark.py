@@ -46,8 +46,8 @@ def benchmark(n=[1, 10, 100, 1000]):
 
         time_quick_inplace = timeit(
             f"sort({array})",
-            setup="from quick import quick_sort_inplace as sort"
-        )
+            setup="from quick import quick_sort_inplace as sort",
+            number=10)
 
         # Print the row
         print(f'{length}', end='')

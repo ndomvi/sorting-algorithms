@@ -24,14 +24,14 @@ def quick_sort(arr: List[int]) -> List[int]:
 
 
 def partition(arr: List[int], low: int, high: int) -> int:
-    i = low - 1
+    i = low
     pivot = arr[high]
     for j in range(low, high):
         if arr[j] < pivot:
-            i += 1
             arr[i], arr[j] = arr[j], arr[i]
-    arr[i+1], arr[high] = arr[high], arr[i+1]
-    return i+1
+            i += 1
+    arr[i], arr[high] = arr[high], arr[i]
+    return i
 
 
 def quick_sort_inplace(arr: List[int], low: int = 0, high: int = None) -> None:
